@@ -1,0 +1,23 @@
+{
+    "id": "nodebb-plugin-webrtc",
+    "name": "WebRTC Chat",
+    "description": "NodeBB plugin that will allow WebRTC calling using EasyRTC",
+    "url": "https://github.com/Schamper/nodebb-plugin-webrtc",
+    "library": "./library.js",
+    "hooks": [
+		{ "hook": "action:app.load", "method": "init.load" },
+		{ "hook": "filter:admin.header.build", "method": "init.admin.addNavigation" }
+    ],
+	"staticDirs": {
+		"static": "./static"
+	},
+    "less": [
+        "static/less/style.less"
+    ],
+	"scripts": [
+		"static/js/loader.js",
+		"static/js/lib/easyrtc.js"
+	],
+	"templates": "./templates",
+	"minver": "0.4.0"
+}
