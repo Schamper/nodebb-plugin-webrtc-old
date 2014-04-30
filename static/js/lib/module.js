@@ -12,11 +12,11 @@ define(function() {
 				}
 			}
 			require([
-				'plugins/nodebb-plugin-webrtc/static/js/lib/base.js',
-				'plugins/nodebb-plugin-webrtc/static/js/lib/utils.js',
-				'plugins/nodebb-plugin-webrtc/static/js/lib/actions.js',
-				'plugins/nodebb-plugin-webrtc/static/js/lib/events.js',
-				'plugins/nodebb-plugin-webrtc/static/js/lib/config.js'
+				'/plugins/nodebb-plugin-webrtc/static/js/lib/base.js',
+				'/plugins/nodebb-plugin-webrtc/static/js/lib/utils.js',
+				'/plugins/nodebb-plugin-webrtc/static/js/lib/actions.js',
+				'/plugins/nodebb-plugin-webrtc/static/js/lib/events.js',
+				'/plugins/nodebb-plugin-webrtc/static/js/lib/config.js'
 			], function(b, u, a, e, c) {
 				b(p); u(p); a(p); e(p); c(p);
 
